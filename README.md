@@ -12,7 +12,7 @@ This project uses CMake. To run it you either need to compile it yourself or dow
 
 ### Precompiled
 
-*TBD*
+Precompiled binary can be dowloaded [here](https://github.com/Reiqy/sudoku-solver/releases/).
 
 ### Usage
 
