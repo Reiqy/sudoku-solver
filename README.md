@@ -26,4 +26,4 @@ Try using one of the sudoku text files from the sudoku folder as a starting poin
 
 ## Sudoku files
 
-Sudoku text files don't require any specific formatting. They must contain at least 81 digits (0 - 9). The program will read the file ignoring all characters except for the digits and it will use the first 81 digits to construct a sudoku. Ordering is row-major (numbers fill rows first, columns second).
+Sudoku text files don't require any specific formatting. They must contain at least 81 digits (0 - 9). The program will read the file ignoring all characters except for the digits and it will use the first 81 digits to construct a sudoku. Ordering is row-major (numbers fill rows first, columns second). Digit 0 is used as a placeholder for empty space in Sudoku puzzle.
