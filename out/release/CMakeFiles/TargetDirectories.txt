@@ -1,3 +1,0 @@
-D:/Projects/C/Hobby/SudokuSolver/out/release/CMakeFiles/SudokuSolver.dir
-D:/Projects/C/Hobby/SudokuSolver/out/release/CMakeFiles/edit_cache.dir
-D:/Projects/C/Hobby/SudokuSolver/out/release/CMakeFiles/rebuild_cache.dir
