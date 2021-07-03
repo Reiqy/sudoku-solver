@@ -194,19 +194,6 @@ bool findNextGuess(Sudoku *s, Placement *p, int attempt)
             if (s->numbers[current_element] == 0)
             {
                 findPossibleNumbers(s, &possible_numbers[current_element], j, i);
-    /*
-                if (attempt < possible_numbers.count)
-                {
-                    p->pos_x = j;
-                    p->pos_y = i;
-                    p->number = possible_numbers.numbers[attempt];
-                    return true;
-                }
-                else
-                {
-                    attempt -= (int) possible_numbers.count;
-                }
-                */
             }
             else
             {
@@ -249,7 +236,6 @@ bool revertSudoku(Sudoku *s, NondeterministicNode *node)
 {
     if (node->previous == NULL)
     {
-        printf("Cannot revert root node!\n");
         return false;
     }
     PlacementPath *path = &node->path;
