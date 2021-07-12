@@ -82,7 +82,9 @@ bool solveNondeterministically(Sudoku *s)
             {
                 return false;
             }
+            // NondeterministicNode *old = current;
             current = current->previous;
+            // freeNondeterministicNode(old);
             continue;
         }
 
