@@ -95,7 +95,7 @@ void printSudoku(Sudoku *s)
     }
 }
 
-bool isSudokuBounded(Sudoku *s)
+bool isSudokuBounded(const Sudoku *s)
 {
     for (size_t i = 0; i < SUDOKU_ARRAY_LENGTH; i++)
     {
@@ -109,7 +109,7 @@ bool isSudokuBounded(Sudoku *s)
 }
 
 
-bool isSudokuValid(Sudoku *s)
+bool isSudokuValid(const Sudoku *s)
 {
     if (!isSudokuBounded(s))
     {
@@ -172,7 +172,7 @@ bool isSudokuValid(Sudoku *s)
     return true;
 }
 
-bool isSudokuComplete(Sudoku *s)
+bool isSudokuComplete(const Sudoku *s)
 {
     for (size_t i = 0; i < SUDOKU_ARRAY_LENGTH; i++)
     {
@@ -185,7 +185,7 @@ bool isSudokuComplete(Sudoku *s)
     return true;
 }
 
-bool isSudokuSolved(Sudoku *s)
+bool isSudokuSolved(const Sudoku *s)
 {
     if (!isSudokuComplete(s))
     {

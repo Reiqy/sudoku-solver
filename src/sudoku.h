@@ -24,10 +24,10 @@ Sudoku readSudokuFromFile(const char *filename);
 
 void printSudoku(Sudoku *s);
 
-bool isSudokuBounded(Sudoku *s);
-bool isSudokuValid(Sudoku *s);
-bool isSudokuComplete(Sudoku *s);
-bool isSudokuSolved(Sudoku *s);
+bool isSudokuBounded(const Sudoku *s);
+bool isSudokuValid(const Sudoku *s);
+bool isSudokuComplete(const Sudoku *s);
+bool isSudokuSolved(const Sudoku *s);
 
 void clearNumberSet(bool *set, size_t length);
 void addNumberSet(bool *set, uint8_t number, size_t length);
