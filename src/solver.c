@@ -103,6 +103,7 @@ bool solveNondeterministically(Sudoku *s)
 
 void findPossibleNumbers(Sudoku *s, PossibleNumbers *p_nums, size_t pos_x, size_t pos_y)
 {
+    // TODO: keep track of possible numbers to limit it while solving nondeterministically and achieve contradictions faster, also helps finding guesses faster
     size_t square_origin_x = (pos_x / SUDOKU_SMALL_SQUARE_SIZE) * SUDOKU_SMALL_SQUARE_SIZE;
     size_t square_origin_y = (pos_y / SUDOKU_SMALL_SQUARE_SIZE) * SUDOKU_SMALL_SQUARE_SIZE;
 
